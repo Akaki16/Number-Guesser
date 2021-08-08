@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+</head>
+<body>
+
+    <div id="message-top">Input field cannot be empty</div>
+
+    <header>
+        <h1>Number Guesser</h1>
+    </header>
+
+    <div class="container">
+        <form id="my-form">
+            <div>
+                <input autofocus type="number" id="number-input" placeholder="Enter your number">
+            </div>
+            <div>
+                <button type="submit">
+                    Submit guess
+                </button>
+            </div>
+        </form>
+        <p class="attempt-txt">Attempts remaining: 15</p>
+        <p id="message"></p>
+    </div>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Game Rules</h2>
+                <i class="fas fa-times-circle fa-2x close"></i>
+            </div>
+            <br>
+            <hr>
+            <div class="modal-body">
+                <ul>
+                    <li>You should guess the number between 1 and 10</li>
+                    <li>You have fifteen attempts</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2">
+        <h2 class="modal-title" id="final-message"></h2>
+        <div style="text-align: center; transform: translateY(200px);">
+            <button class="play-again" type="button">
+                Play Again
+            </button>
+        </div>
+    </div>
+
+    <div id="modal3">
+        <h2 class="modal-title">You lost the game! Try your luck later</h2>
+        <div style="text-align: center; transform: translateY(200px);">
+            <button class="play-again">Play Again</button>
+        </div>
+    </div>
+
+    <div class="btn-cont">
+        <button class="modal-btn" type="button">
+            Rules
+        </button>
+    </div>
+
+
+    <script type="module" src="scripts/app.js"></script>
+    <script type="module" src="scripts/my.js"></script>
+</body>
+</html>
